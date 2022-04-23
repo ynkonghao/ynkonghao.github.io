@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>欢迎光临微点购物商城</title>
+    <link rel="stylesheet" href="bootstrap-3.4.1-dist/css/bootstrap.min.css" />
+    <script src="./bootstrap-3.4.1-dist/js/jquery-3.6.0.min.js"></script>
+    <script src="./bootstrap-3.4.1-dist/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="./fontawesome-free-6.1.1-web/css/all.min.css"/>
+    <link rel="stylesheet" href="css/main.css" />
+</head>
+
+<body>
+<!--顶部导航-->
+    <div class="container-fluid" id="top_container">
+        <div class="container">
+            <ul class="list-unstyled list-inline">
+                <li><a href="#top1" class="top_link">用户注册</a></li>
+                <li><a href="#top2" class="top_link">用户登录</a></li>
+                <li><a href="#top3" class="top_link">系统管理</a></li>
+            </ul>
+        </div>
+    </div>
+<!--顶部图标-->
+    <div class="container-fluid" id="logo_container">
+        <div id="logo"></div>
+        <div id="big_search" class="hidden-sm hidden-xs">
+            <div class="input-group">
+                <input type="text" class="form-control" placeholder="输入商品名称">
+                <span class="input-group-btn">
+                    <button class="btn btn-default" type="button">搜索商品</button>
+                </span>
+            </div><!-- /input-group -->
+            <div id="cart">
+                <span>
+                    我的购物车&nbsp;&nbsp;<span class="badge">42</span>
+                </span>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+<!--导航条-->
+    <nav class="navbar navbar-default" id="index_nav">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand hidden-sm hidden-xs" href="#">分类</a>
+            </div>
+            <div class="hidden-md hidden-lg" id="small_search">
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="输入商品名称">
+                    <span class="input-group-btn">
+                        <button class="btn btn-default" type="button">搜索</button>
+                    </span>
+                </div><!-- /input-group -->
+                <div id="small_cart">
+                    <a href="#cart">购物车</a><span class="badge">42</span>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li><a href="#">手机</a></li>
+                    <li><a href="#">家用电器</a></li>
+                    <li><a href="#">存储设备</a></li>
+                    <li><a href="#">游戏周边</a></li>
+                    <li><a href="#">耳机音箱</a></li>
+                    <li><a href="#">电视机</a></li>
+                    <li><a href="#">音频设备</a></li>
+                    <li><a href="#">家用游戏机</a></li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </nav>
+<!--最新折扣-->
+    <div class="container-fluid" id="discount">
+        <h3></h3>
+        <div class="row">
+            <div class="col-md-3 col-sm-6">
+                <div class="discount_item">
+                    <img class="img-responsive" src="d01.jpg" alt="">
+                    <p>
+                        <i class="fa-regular fa-calendar"></i>
+                        <span>2021/09/07</span>
+                        <span>￥<s>1998.00</s></span>
+                        <span>￥889.00</span>
+                    </p>
+                    <h4>铁三角耳机M100精致版</h4>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="discount_item">
+                    <img class="img-responsive" src="d02.jpg" alt="">
+                    <p>
+                        <i class="fa-regular fa-calendar"></i>
+                        <span>2021/09/07</span>
+                        <span>￥<s>1998.00</s></span>
+                        <span>￥889.00</span>
+                    </p>
+                    <h4>铁三角耳机M100精致版</h4>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="discount_item">
+                    <img class="img-responsive" src="d03.jpg" alt="">
+                    <p>
+                        <i class="fa-regular fa-calendar"></i>
+                        <span>2021/09/07</span>
+                        <span>￥<s>1998.00</s></span>
+                        <span>￥889.00</span>
+                    </p>
+                    <h4>铁三角耳机M100精致版</h4>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="discount_item">
+                    <img class="img-responsive" src="d04.jpg" alt="">
+                    <p>
+                        <i class="fa-regular fa-calendar"></i>
+                        <span>2021/09/07</span>
+                        <span>￥<s>1998.00</s></span>
+                        <span>￥889.00</span>
+                    </p>
+                    <h4>铁三角耳机M100精致版</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+<!--热销产品-->
+    <div id="trend" class="container-fluid">
+        <h3></h3>
+        <div class="container text-center">
+            <button type="button" class="btn btn-warning">最新产品</button>
+            <button type="button" class="btn btn-default">卖得最好</button>
+            <button type="button" class="btn btn-default">特色商品</button>
+        </div>
+        <div class="row" id="trend_content">
+            <div class="col-md-2 col-xs-6 text-center">
+                <div class="trend_item">
+                    <div class="trend_item_top">
+                        <p class="text-center">苹果摄像头</p>
+                        <p class="text-center">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i><i class="fa-regular fa-star"></i>
+                        </p>
+                        <p class="text-center">￥987</p>
+                    </div>
+                    <div class="trend_item_img text-center">
+                        <img src="t01.jpg" class="img-responsive" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2 col-xs-6">
+                <div class="trend_item">
+                    <div class="trend_item_top">
+                        <p class="text-center">苹果摄像头</p>
+                        <p class="text-center">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i><i class="fa-regular fa-star"></i>
+                        </p>
+                        <p class="text-center">￥987</p>
+                    </div>
+                    <div class="trend_item_img text-center">
+                        <img src="t02.jpg" class="img-responsive" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2 col-xs-6">
+                <div class="trend_item">
+                    <div class="trend_item_top">
+                        <p class="text-center">苹果摄像头</p>
+                        <p class="text-center">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i><i class="fa-regular fa-star"></i>
+                        </p>
+                        <p class="text-center">￥987</p>
+                    </div>
+                    <div class="trend_item_img text-center">
+                        <img src="t03.jpg" class="img-responsive" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2 col-xs-6">
+                <div class="trend_item">
+                    <div class="trend_item_top">
+                        <p class="text-center">苹果摄像头</p>
+                        <p class="text-center">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i><i class="fa-regular fa-star"></i>
+                        </p>
+                        <p class="text-center">￥987</p>
+                    </div>
+                    <div class="trend_item_img text-center">
+                        <img src="t04.jpg" class="img-responsive" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2 col-xs-6">
+                <div class="trend_item">
+                    <div class="trend_item_top">
+                        <p class="text-center">苹果摄像头</p>
+                        <p class="text-center">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i><i class="fa-regular fa-star"></i>
+                        </p>
+                        <p class="text-center">￥987</p>
+                    </div>
+                    <div class="trend_item_img text-center">
+                        <img src="t05.jpg" class="img-responsive" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2 col-xs-6">
+                <div class="trend_item">
+                    <div class="trend_item_top">
+                        <p class="text-center">苹果摄像头</p>
+                        <p class="text-center">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i><i class="fa-regular fa-star"></i>
+                        </p>
+                        <p class="text-center">￥987</p>
+                    </div>
+                    <div class="trend_item_img text-center">
+                        <img src="t06.jpg" class="img-responsive" alt="">
+                    </div>
+                </div>
+            </div>    
+        </div>
+    </div>
+<!--产品分类-->
+    <div class="container-fluid" id="category">
+        <h3></h3>
+        <div class="row" id="category_centent">
+            <div class="col-md-3 col-sm-6">
+                <div class="category_item1">
+                    <img src="c01.jpg"  alt="" class="img-responsive">
+                    <h4>家用电器</h4>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="category_item1">
+                    <img src="c02.jpg"  alt="" class="img-responsive">
+                    <h4>家用电器</h4>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="category_item1">
+                    <img src="c03.jpg"  alt="" class="img-responsive">
+                    <h4>家用电器</h4>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="category_item1">
+                    <img src="c04.jpg"  alt="" class="img-responsive">
+                    <h4>家用电器</h4>
+                </div>
+            </div>
+        </div>
+        <div class="row ca_base">
+            <div class="col-md-4">
+                <a href="#ca1">
+                    <img class="img-responsive" src="ca01.jpg" alt="">
+                </a>
+            </div>
+            <div class="col-md-4">
+                <a href="#ca1">
+                    <img class="img-responsive" src="ca02.jpg" alt="">
+                </a>
+            </div>
+            <div class="col-md-4">
+                <a href="#ca1">
+                    <img class="img-responsive" src="ca03.jpg" alt="">
+                </a>
+            </div>
+        </div>
+
+        <div class="row main_category">
+            <div class="col-md-4">
+                <h3>智能手机</h3>
+                <div class="main_item">
+                    <div class="main_item_left">
+                        <img src="p1.jpg" height="160" alt="">
+                    </div>
+                    <div class="main_item_right">
+                        <p>华为智能手表</p>
+                        <p>      
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i><i class="fa-regular fa-star"></i>
+                        </p>
+                        <p>
+                            <s>￥1998</s> <span>￥888</span>
+                        </p>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="main_item">
+                    <div class="main_item_left">
+                        <img src="p2.jpg" height="160" alt="">
+                    </div>
+                    <div class="main_item_right">
+                        <p>飞利浦加湿器</p>
+                        <p>      
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i><i class="fa-regular fa-star"></i>
+                        </p>
+                        <p>
+                            <span>￥888</span>
+                        </p>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="main_item">
+                    <div class="main_item_left">
+                        <img src="p3.jpg" height="160" alt="">
+                    </div>
+                    <div class="main_item_right">
+                        <p>HP智能耳机</p>
+                        <p>      
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i><i class="fa-regular fa-star"></i>
+                        </p>
+                        <p>
+                            <s>￥2888</s> <span>￥1888</span>
+                        </p>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <h3>家用电器</h3>
+                <div class="main_item">
+                    <div class="main_item_left">
+                        <img src="p4.jpg" height="160" alt="">
+                    </div>
+                    <div class="main_item_right">
+                        <p>华为智能手表</p>
+                        <p>      
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i><i class="fa-regular fa-star"></i>
+                        </p>
+                        <p>
+                            <s>￥1998</s> <span>￥888</span>
+                        </p>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="main_item">
+                    <div class="main_item_left">
+                        <img src="p5.jpg" height="160" alt="">
+                    </div>
+                    <div class="main_item_right">
+                        <p>飞利浦加湿器</p>
+                        <p>      
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i><i class="fa-regular fa-star"></i>
+                        </p>
+                        <p>
+                            <span>￥888</span>
+                        </p>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="main_item">
+                    <div class="main_item_left">
+                        <img src="p6.jpg" height="160" alt="">
+                    </div>
+                    <div class="main_item_right">
+                        <p>HP智能耳机</p>
+                        <p>      
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i><i class="fa-regular fa-star"></i>
+                        </p>
+                        <p>
+                            <s>￥2888</s> <span>￥1888</span>
+                        </p>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <h3>数码产品</h3>
+                <div class="main_item">
+                    <div class="main_item_left">
+                        <img src="p7.jpg" height="160" alt="">
+                    </div>
+                    <div class="main_item_right">
+                        <p>华为智能手表</p>
+                        <p>      
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i><i class="fa-regular fa-star"></i>
+                        </p>
+                        <p>
+                            <s>￥1998</s> <span>￥888</span>
+                        </p>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="main_item">
+                    <div class="main_item_left">
+                        <img src="p5.jpg" height="160" alt="">
+                    </div>
+                    <div class="main_item_right">
+                        <p>飞利浦加湿器</p>
+                        <p>      
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i><i class="fa-regular fa-star"></i>
+                        </p>
+                        <p>
+                            <span>￥888</span>
+                        </p>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="main_item">
+                    <div class="main_item_left">
+                        <img src="p6.jpg" height="160" alt="">
+                    </div>
+                    <div class="main_item_right">
+                        <p>HP智能耳机</p>
+                        <p>      
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i><i class="fa-regular fa-star"></i>
+                        </p>
+                        <p>
+                            <s>￥2888</s> <span>￥1888</span>
+                        </p>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid" id="bottom">
+        <address>
+            <strong>云备案:ISP1233322-22 copyright©2020-2021</strong><br>
+            地址：xxxxxxxxxxx 客服电话：800998999<br>
+            <abbr title="Phone">P:</abbr> (123) 456-7890
+        </address>
+    </div>
+</body>
+
+</html>
